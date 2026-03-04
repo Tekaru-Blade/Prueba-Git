@@ -12,7 +12,7 @@ class AlgoritmosOrdenamiento:
         return A
 
     def insercion(self, lista):
-        """Método de inserción: ordena como una baraja de cartas."""
+        """Método de inserción."""
         A = lista[:]
         for j in range(1, len(A)):
             key = A[j]
@@ -36,7 +36,7 @@ class AlgoritmosOrdenamiento:
         return A
 
     def mergesort(self, A):
-        """Método merge: estrategia divide y vencerás."""
+        """Método merge."""
         if len(A) <= 1:
             return A
         
