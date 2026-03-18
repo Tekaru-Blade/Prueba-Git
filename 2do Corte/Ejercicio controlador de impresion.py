@@ -41,7 +41,7 @@ class ImpresoraApp:
     def agregar(self):
         try:
             doc = Documento(self.ent_nombre.get(), int(self.ent_paginas.get()), float(self.ent_tiempo.get()))
-            self.cola.append(doc) # Agregar al final de la cola [7]
+            self.cola.append(doc) # Agregar al final de la cola
             self.lbl_estado.config(text=f"En cola: {len(self.cola)}")
         except:
             messagebox.showerror("Error", "Revisa los datos")
